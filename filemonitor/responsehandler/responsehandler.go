@@ -13,7 +13,7 @@ import (
     "encoding/json"
 )
 
-const logfile string = "/tmp/foo/mylog.log"
+const logfile string = "/var/log/newfiles.log"
 
 type Response struct {
     Files []string `json:"files"`

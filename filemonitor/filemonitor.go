@@ -6,8 +6,6 @@ import (
     "./responsehandler"
 )
 
-const logfile string = "/tmp/foo/mylog.log"
-
 func main() {
     http.HandleFunc("/", responsehandler.Handler)
     go func() {

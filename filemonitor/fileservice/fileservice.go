@@ -11,8 +11,8 @@ import (
     "github.com/emmasteimann/fsmonitor"
 )
 
-const logfile string = "/tmp/foo/mylog.log"
-const watchdirectory string = "/tmp/foo"
+const logfile string = "/var/log/newfiles.log"
+const watchdirectory string = "/home"
 
 func writeLine(line string, path string) error {
   file, err := os.OpenFile(path, os.O_APPEND|os.O_WRONLY, 0600)
